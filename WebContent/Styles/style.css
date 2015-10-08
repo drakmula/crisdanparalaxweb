@@ -1,0 +1,23 @@
+body {
+	background: #FFFFFF;
+}
+
+.d_corpo {
+	margin: 10px auto;
+	border: solid 1px;
+	padding: 1px;	
+}
+
+.d_corpo .d_titulo h1 {
+	width: 500px;
+	color: #555;
+	text-align: center;
+	margin: 10px auto;
+
+}
+
+.d_corpo .d_titulo button {
+	margin : 10px;
+	margin-left : 80px;
+	position: relative;
+}

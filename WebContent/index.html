@@ -1,0 +1,43 @@
+<html>
+<link rel="stylesheet" href="Styles/style.css" />
+
+<script>	
+		function escreveData() {
+			now = new Date();
+			num_dia = now.getDate();
+			dia = now.getDay();
+			mes = now.getMonth();
+			ano = now.getYear()+;
+
+			diaSemana = new Array("Domingo", "Segunda-feira",
+					"Terça-feira", "Quarta-feira", "Quinta-feira",
+					"Sexta-feira", "Sábado");
+			
+			nomeMes = new Array("janeiro", "fevereiro", "março",
+					"abril", "maio", "junho", "julho", "agosto",
+					"setembro", "outubro", "novembro", "dezembro");
+			
+			dataext = diaSemana[dia] + ", " + num_dia + " de "
+					+ nomeMes[mes] + " de " + ano;
+			document.write(dataext);
+			return dataext;
+		}
+	</script>
+
+<body>
+	<div class="d_corpo">
+		<div class="d_data">
+			<form>
+				<input type="text" name="dataAtual" ><script>escreveData()</script>
+			</form>
+			<div class="d_titulo">
+				<h1>Crisdan Paralax - Web</h1>
+				<button class="adicionar">Adicionar</button>
+
+			</div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+</body>
+</html>
