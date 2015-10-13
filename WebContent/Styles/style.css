@@ -2,22 +2,64 @@ body {
 	background: #FFFFFF;
 }
 
+.d_Top {
+	height: 3%;
+	margin: 10px auto;
+	border: solid 1px;
+	padding: 1px;
+}
+
+.d_Top .d_data {
+	float: left;
+	width: 45%;
+	font-size: 12px;
+	padding: 1px;
+}
+
+.d_Top .d_mLogin {
+	float: left;
+	width: 45%;
+	margin-left: 110px;
+	padding: 1px;
+}
+
+.d_Top .d_mLogin p {
+	text-align: right;
+	font-size: 13px;
+}
+
 .d_corpo {
 	margin: 10px auto;
 	border: solid 1px;
-	padding: 1px;	
+	padding: 1px;
 }
 
 .d_corpo .d_titulo h1 {
-	width: 500px;
 	color: #555;
 	text-align: center;
 	margin: 10px auto;
-
 }
 
-.d_corpo .d_titulo button {
-	margin : 10px;
-	margin-left : 80px;
+.d_corpo .d_Menu button {
+	margin: 10px;
+	margin-left: 80px;
 	position: relative;
+}
+
+.d_Main {
+	margin: 10px auto;
+	height: 300px;
+	border: solid 1px;
+	padding: 1px;
+}
+
+.d_Footer {
+	margin: 10px auto;
+	height: 150px;
+	border: solid 1px;
+	padding: 1px;
+}
+
+.d_Footer h1 {
+	text-align: center;
 }

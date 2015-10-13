@@ -1,43 +1,84 @@
 <html>
 <link rel="stylesheet" href="Styles/style.css" />
+<head>
+<script type="text/javascript">
+	dayName = new Array("domingo", "segunda", "terça", "quarta", "quinta",
+			"sexta", "sábado");
 
-<script>	
-		function escreveData() {
-			now = new Date();
-			num_dia = now.getDate();
-			dia = now.getDay();
-			mes = now.getMonth();
-			ano = now.getYear()+;
+	meses = new Array(12);
+	meses[0] = "Janeiro";
+	meses[1] = "Fevereiro";
+	meses[2] = "Março";
+	meses[3] = "Abril";
+	meses[4] = "Maio";
+	meses[5] = "Junho";
+	meses[6] = "Julho";
+	meses[7] = "Agosto";
+	meses[8] = "Setembro";
+	meses[9] = "Outubro";
+	meses[10] = "Novembro";
+	meses[11] = "Dezembro";
 
-			diaSemana = new Array("Domingo", "Segunda-feira",
-					"Terça-feira", "Quarta-feira", "Quinta-feira",
-					"Sexta-feira", "Sábado");
-			
-			nomeMes = new Array("janeiro", "fevereiro", "março",
-					"abril", "maio", "junho", "julho", "agosto",
-					"setembro", "outubro", "novembro", "dezembro");
-			
-			dataext = diaSemana[dia] + ", " + num_dia + " de "
-					+ nomeMes[mes] + " de " + ano;
-			document.write(dataext);
-			return dataext;
-		}
-	</script>
+	horas = new Array(22);
 
+	horas[0] = "00";
+	horas[1] = "01";
+	horas[2] = "02";
+	horas[3] = "03";
+	horas[4] = "04";
+	horas[5] = "05";
+	horas[6] = "06";
+	horas[7] = "07";
+	horas[8] = "08";
+	horas[9] = "09";
+	horas[10] = "10";
+	horas[11] = "11";
+	horas[12] = "12";
+	horas[13] = "13";
+	horas[14] = "14";
+	horas[15] = "15";
+	horas[16] = "16";
+	horas[17] = "17";
+	horas[18] = "18";
+	horas[19] = "19";
+	horas[20] = "20";
+	horas[21] = "21";
+	horas[22] = "22";
+	horas[23] = "23";
+
+	now = new Date
+</script>
+</head>
 <body>
-	<div class="d_corpo">
-		<div class="d_data">
+	<div class="d_Top">
+		<div class="d_Data">
 			<form>
-				<input type="text" name="dataAtual" ><script>escreveData()</script>
+				<label><script type="text/javascript">
+					document.write("Hoje é " + dayName[now.getDay()] + ", "
+							+ now.getDate() + " de " + meses[now.getMonth()]
+							+ " de " + now.getFullYear() + " - ")
+				</script> <script type="text/javascript">
+						now = new Date
+						document.write(horas[now.getHours()] + ":"
+								+ now.getMinutes())
+					</script></label>
 			</form>
-			<div class="d_titulo">
-				<h1>Crisdan Paralax - Web</h1>
-				<button class="adicionar">Adicionar</button>
-
-			</div>
-			<div></div>
-			<div></div>
 		</div>
+		<div class="d_mLogin">
+			<p>Logado como: Jhônatta Borba Anacleto</p>
+		</div>
+	</div>
+	<div class="d_corpo">
+		<div class="d_titulo">
+			<h1>Crisdan Paralax - Web</h1>
+		</div>
+		<div class="d_Menu">
+			<button class="adicionar">Adicionar</button>
+		</div>
+	</div>
+	<div class="d_Main"></div>
+	<div class="d_Footer">
+		<h1>Footer</h1>
 	</div>
 </body>
 </html>
