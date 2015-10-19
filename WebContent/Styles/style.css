@@ -29,6 +29,7 @@ body {
 }
 
 .d_corpo {
+	height: 150px;
 	margin: 10px auto;
 	border: solid 1px;
 	padding: 1px;
@@ -40,10 +41,36 @@ body {
 	margin: 10px auto;
 }
 
-.d_corpo .d_Menu button {
+.d_corpo .d_Menu_Adicionar {
+	float: left;
+	width: 25%;
 	margin: 10px;
-	margin-left: 80px;
+	border: solid 1px;
 	position: relative;
+}
+
+.d_corpo .d_Menu_Adicionar .bnt_add {
+	position:relative;
+	top:1px;
+	left:33px;
+	margin:5px auto;
+	padding:1px;
+}
+
+.d_corpo .d_Menu_Adicionar .bnt_delete {
+	position:relative;
+	top:1px;
+	left:66px;
+	margin:5px auto;
+	padding:1px;
+}
+
+.d_corpo .d_Menu_Adicionar .bnt_modify {
+	position:relative;
+	top:1px;
+	left:99px;
+	margin:5px auto;
+	padding:1px;
 }
 
 .d_Main {
@@ -51,6 +78,22 @@ body {
 	height: 300px;
 	border: solid 1px;
 	padding: 1px;
+}
+
+.d_Main .d_Grind_Main {
+	margin: 10px auto;
+	padding: 1px;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t01 th {
+    color: white;
+    background-color: black;
 }
 
 .d_Footer {
